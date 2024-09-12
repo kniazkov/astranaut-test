@@ -50,6 +50,10 @@ public class CWE197_Numeric_Truncation_Error__int_Environment_to_byte_01 extends
 
     }
 
+    public int doSomething() {
+        return 0;
+    }
+
     public void good() throws Throwable
     {
         goodSourceAndBadSink();
