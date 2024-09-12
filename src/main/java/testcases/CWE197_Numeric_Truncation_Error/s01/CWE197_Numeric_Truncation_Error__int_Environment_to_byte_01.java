@@ -35,7 +35,7 @@ public class CWE197_Numeric_Truncation_Error__int_Environment_to_byte_01 extends
             {
                 try
                 {
-                    data = Integer.parseInt(stringNumber.trim());
+                    data = Byte.parseByte(stringNumber.trim());
                 }
                 catch(NumberFormatException exceptNumberFormat)
                 {
@@ -61,7 +61,7 @@ public class CWE197_Numeric_Truncation_Error__int_Environment_to_byte_01 extends
         int data;
 
         /* FIX: Use a hardcoded number that won't cause underflow, overflow, divide by zero, or loss-of-precision issues */
-        data = 2;
+        data = 0;
 
         {
             /* POTENTIAL FLAW: Convert data to a byte, possibly causing a truncation error */

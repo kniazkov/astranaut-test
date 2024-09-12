@@ -9,6 +9,9 @@ package testcasesupport;
 public abstract class AbstractTestCaseBase 
 {
     public abstract void runTest(String className);
+	
+	void doSomething() {
+	}
 
     /* from a static method like main(), there is not an easy way to get the current
      * classes's name.  We do a trick here to make it work so that we don't have
