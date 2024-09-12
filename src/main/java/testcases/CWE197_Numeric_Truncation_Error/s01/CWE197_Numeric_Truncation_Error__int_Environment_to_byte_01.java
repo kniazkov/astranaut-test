@@ -52,11 +52,11 @@ public class CWE197_Numeric_Truncation_Error__int_Environment_to_byte_01 extends
 
     public void good() throws Throwable
     {
-        goodG2B();
+        goodSourceAndBadSink();
     }
 
-    /* goodG2B() - uses goodsource and badsink */
-    private void goodG2B() throws Throwable
+    /* goodSourceAndBadSink() - uses goodsource and badsink */
+    private void goodSourceAndBadSink() throws Throwable
     {
         int data;
 

@@ -104,19 +104,19 @@ public class IO
     http://java.sun.com/developer/technicalArticles/Security/AES/AES_v1.html */
     public static String toHex (byte byteBuffer[]) 
     {
-        StringBuffer strBuffer = new StringBuffer(byteBuffer.length * 2);
+        StringBuffer buffer = new StringBuffer(byteBuffer.length * 2);
         int i;
 
         for (i = 0; i < byteBuffer.length; i++) 
         {
             if (((int) byteBuffer[i] & 0xff) < 0x10)
             {
-                strBuffer.append("0");
+                buffer.append("0");
             }
             
-            strBuffer.append(Long.toString((int) byteBuffer[i] & 0xff, 16));
+            buffer.append(Long.toString((int) byteBuffer[i] & 0xff, 16));
         }
 
-        return strBuffer.toString();
+        return buffer.toString();
     }
 }
